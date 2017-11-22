@@ -10,14 +10,14 @@ ENV HOME            /root
 ENV LC_ALL          C.UTF-8
 ENV LANG            en_US.UTF-8
 ENV LANGUAGE        en_US.UTF-8
-ENV PATH 						$PATH
+ENV PATH 			$PATH
 
 #########################################
 ##         RUN INSTALL SCRIPT          ##
 #########################################
 
-ADD install.sh /tmp/
-RUN chmod +x /tmp/install.sh && /tmp/install.sh && rm /tmp/install.sh
+ADD install.sh /root/
+RUN chmod +x /root/install.sh; /root/install.sh; rm /root/install.sh
 
 ##################################################
 # Start                                          #
