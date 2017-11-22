@@ -18,7 +18,8 @@ ENV PATH 			$PATH
 
 ADD install.sh /tmp/
 RUN chmod +x /tmp/install.sh
-RUN /tmp/install.sh; rm /root/install.sh
+CMD ["/tmp/install.sh"]
+RUN rm /tmp/install.sh
 
 ##################################################
 # Start                                          #
