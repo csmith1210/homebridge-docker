@@ -34,6 +34,7 @@ sudo apt-get install -qy avahi-daemon avahi-discover libnss-mdns libavahi-compat
 ##################################################
 
 sudo npm install -g homebridge
+sudo npm install -g ps4-waker
 
 #########################################
 ##                 CLEANUP             ##
