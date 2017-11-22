@@ -16,7 +16,7 @@ ENV PATH 			$PATH
 ##         RUN INSTALL SCRIPT          ##
 #########################################
 
-ADD install.sh /tmp/
+ADD install.sh /tmp/install.sh
 RUN chmod +x /tmp/install.sh
 RUN /tmp/install.sh
 RUN rm /tmp/install.sh
@@ -31,6 +31,7 @@ EXPOSE 5353 51826
 
 ADD install_plugins.sh /root/install_plugins.sh
 ADD run.sh /root/run.sh
+RUN chmod +x /root/run.sh
 
 VOLUME ["/root/.homebridge"]
 CMD ["/root/run.sh"]

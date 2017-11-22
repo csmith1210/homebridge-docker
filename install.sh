@@ -40,7 +40,7 @@ sudo npm install -g homebridge
 #########################################
 
 sudo npm install -g ps4-waker
-sudo apt-get install samba-common
+sudo apt-get install -qy samba-common
 
 #########################################
 ##                 CLEANUP             ##
