@@ -16,8 +16,9 @@ ENV PATH 			$PATH
 ##         RUN INSTALL SCRIPT          ##
 #########################################
 
-ADD install.sh /root/
-RUN chmod +x /root/install.sh; /root/install.sh; rm /root/install.sh
+ADD install.sh /tmp/
+RUN chmod +x /tmp/install.sh
+RUN /tmp/install.sh; rm /root/install.sh
 
 ##################################################
 # Start                                          #
