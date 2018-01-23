@@ -23,24 +23,24 @@ mkdir -p /var/run/dbus
 add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe multiverse"
 add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates universe multiverse"
 
-sudo apt-get update
-sudo apt-get install -qy git make gcc g++
+apt-get update
+apt-get install -qy git make gcc g++
 curl -sL https://deb.nodesource.com/setup_6.x | bash -
-sudo apt-get install -qy nodejs
-sudo apt-get install -qy avahi-daemon avahi-discover libnss-mdns libavahi-compat-libdnssd-dev
+apt-get install -qy nodejs
+apt-get install -qy avahi-daemon avahi-discover libnss-mdns libavahi-compat-libdnssd-dev
 
 ##################################################
 # Install homebridge                             #
 ##################################################
 
-sudo npm install -g homebridge
+npm install -g homebridge
 
 #########################################
 ##        INSTALL EXTRA PACKAGES       ##
 #########################################
 
-sudo npm install -g ps4-waker
-sudo apt-get install -qy samba-common
+npm install -g ps4-waker
+apt-get install -qy samba-common
 
 #########################################
 ##                 CLEANUP             ##
