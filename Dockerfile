@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:0.9.15
 
 #########################################
 ##        ENVIRONMENTAL CONFIG         ##
